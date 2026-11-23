@@ -1,0 +1,136 @@
+
+.table-header{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  background-color: rgb(148, 0, 0);
+  color: white;
+  font-weight: bold;
+  font-family: arial;
+}
+
+.table{
+  margin-top: 160px;
+  border-radius: 9px;
+  border: 3px solid rgb(148, 0, 0)  ;
+}
+
+.table-body{  
+  border: 1px solid rgb(148, 0, 0)  ;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-rows: auto 1fr auto;
+}
+
+.profile-pic, .profile, .id, .g-s, .reg, .due, .Status{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.img, .name, .id-no, .g-ss, .reg-date, .due-date, .status{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(148, 0, 0, 1);
+}
+
+
+.header{
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  border: 20px;
+  border-width: 5px;
+  border-color: black;
+  background-color: white;
+  position: fixed;
+  height: 150px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.left-header{
+  align-items: center;
+  display: flex;
+}
+
+.right-header .tabs{
+
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.logo img{
+  width: 150px;
+}
+
+.left-header .enverga h1{
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+  font-family: "Bebas Neue", sans-serif;
+  color: rgb(148, 0, 0);
+  height: 15px;
+
+}
+
+
+.tabs a{
+  width: 200px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  background-color: rgb(148, 0, 0);
+  padding: 15px;
+  font-family: arial;
+  font-weight: bold;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+}
+
+.tabs a:hover {
+  transform: scale(1.07) translateY(-2px);
+  z-index: 10; /* overlap on low z-index level */
+}
+
+
+.table p{
+  height: 50px;
+  font-weight: bold;
+}
+
+.profile-pic p, .profile p, .id p, .g-s p, .reg p, .due p, .Status p{
+  display: flex;
+  align-items: center;
+
+}
+
+
+.name p, .id-no p, .g-ss p, .reg-date p, .due-date p, .status p{
+  display: flex;
+  align-items: center;
+}
+
+.img img{
+  display: grid;
+  align-items: center;
+  width: 70px;
+  justify-content: center;
+  border: 1px solid rgb(148, 0, 0);
+  border-radius: 2px;
+}
+
+.table-body .img{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+

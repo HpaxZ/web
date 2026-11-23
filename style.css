@@ -1,0 +1,257 @@
+html{
+  padding: 0;
+  margin: 0;
+}
+
+/* header */
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 20px;
+  border-width: 5px;
+  border-color: black;
+}
+.left-header{
+  align-items: center;
+  display: flex;
+}
+
+.right-header .tabs{
+  align-items: center;
+  display: flex;
+}
+.logo img{
+  width: 150px;
+}
+
+.left-header .enverga h1{
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+  font-family: "Bebas Neue", sans-serif;
+  color: rgb(148, 0, 0);
+  height: 15px;
+
+}
+
+.tabs a{
+  width: 100px;
+  font-size: 15px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  background-color: rgb(148, 0, 0);
+  padding: 15px;
+  font-family: arial;
+  font-weight: bold;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+}
+
+.back-to-top{
+  background-color: white;
+  border-radius: 500000px;
+  padding: 20px;
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+}
+.back-to-top img{
+  width: 20px;
+  transition: 0.3s;
+}
+
+.back-to-top img:hover{
+  width: 22px;
+}
+
+.tabs a:hover {
+  transform: scale(1.06) translateY(-2px);
+  z-index: 10; /* overlap on low z-index level */
+}
+
+/* data */
+
+.user-data{
+  margin: 0;
+  font-size: 30px;
+  font-family: Arial;
+  width: 100%;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;  
+  column-gap: 2%;
+  row-gap: 20px;
+
+}
+
+.user-data div {
+  width: 480px;
+  background-color: rgb(148, 0, 0);
+  border-radius: 20px;
+  height: 250px;
+}
+
+.user-data div img{
+  margin-left: 10px;
+  margin-top: 8px;
+  border-radius: 50px;
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
+
+#user-1 .top-info, #user-2 .top-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0;
+}
+
+#user-1 .top-info p, #user-2 .top-info p{
+  margin: 2px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+#user-1 div, #user-2 div{
+  display: flex;
+  flex-direction: row;
+  height: 0;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+
+#user-1 div p, #user-2 div p{
+  margin: 8px;
+  display: flex;
+  font-size: 13px;
+}
+
+#user-1 .lower-info, #user-2 .lower-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 90px;
+}
+
+#user-1 .lower-info .section, #user-2 .lower-info .section{
+  margin: 0px;
+  margin-right: 50px;
+}
+
+#user-1 .middle-info .username, #user-2 .middle-info .username {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+#user-1 .middle-info .username .name-text, #user-2 .middle-info .username .name-text{
+  font-size: 9px;
+  text-decoration: none;
+}
+
+#user-1 .middle-info .username p, #user-2 .middle-info .username p{
+  margin: 1px;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+}
+
+#user-1 .middle-info .id-no, #user-2 .middle-info .id-no{
+  display: flex;
+  flex-direction: column;
+  margin: 3px;
+}
+
+#user-1 .middle-info .id-no .id-text, #user-2 .middle-info .id-no .id-text{
+  text-decoration: none;
+  font-size: 9px;
+}
+
+#user-1 .middle-info .id-no p, #user-2 .middle-info .id-no p{
+  margin: 1px;
+  align-items: center;
+  justify-content: center;
+}
+
+#user-1 .middle-info .user-section, #user-2 .middle-info .user-section {
+  display: flex;
+  flex-direction: column;
+  margin: 3px;
+  margin-right: 20px;
+}
+
+#user-1 .middle-info .user-section .section-text, #user-2 .middle-info .user-section .section-text{
+  font-size: 9px;
+  text-decoration: none;
+}
+
+#user-1 .middle-info .user-section p, #user-2 .middle-info .user-section p{
+  font-size: 11px;
+  margin: 1px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#user-1 .middle-info, #user-2 .middle-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-top: 70px;
+}
+
+
+#user-1 .middle-info p, #user-2 .middle-info p{
+  text-decoration: underline;
+}
+
+#user-1 .middle-info img, #user-2 .middle-info img{
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+}
+
+
+#user-1 .lower-info p, #user-2 .lower-info p{
+  margin: 33px;
+  font-size: 10px;
+  font-weight: bold;
+
+}
+
+#user-1 .date, #user-2 .date{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#user-1 .date p,#user-2 .date p{
+  margin-left: 70px;
+}
+
+#user-1 .mini-logo img, #user-2 .mini-logo img{
+  display: flex;
+  margin-top: 100px;
+  margin-right: 400px;
+  width: 70px;
+  height: 70px;
+}
+
